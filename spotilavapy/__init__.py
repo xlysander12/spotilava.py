@@ -1,6 +1,8 @@
 import sys
 assert sys.version_info[0] == 3
+import spotilava
 from spotilava import SpotiLava
+import exceptions
 from exceptions import Forbidden, NotFound, InvalidPlayer
 
 __author__ = "Lysander12"
