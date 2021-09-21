@@ -1,6 +1,6 @@
 import spotipy
 import lavalink
-import exceptions
+from spotilavapy import exceptions
 from spotipy.oauth2 import SpotifyClientCredentials
 
 class SpotiLava:
