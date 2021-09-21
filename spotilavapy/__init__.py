@@ -1,9 +1,7 @@
 import sys
 assert sys.version_info[0] == 3
-import spotilava
-from spotilava import SpotiLava
-import exceptions
-from exceptions import Forbidden, NotFound, InvalidPlayer
+from spotilavapy.spotilava import SpotiLava
+from spotilavapy.exceptions import Forbidden, NotFound, InvalidPlayer
 
 __author__ = "Lysander12"
 __url__ = "https://github.com/xlysander12/spotilava.py"
