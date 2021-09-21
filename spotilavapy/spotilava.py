@@ -75,3 +75,8 @@ class SpotiLava:
             tracks.append(await self.convert_track(item["track"]["uri"]))
 
         return tracks
+
+    async def convert_playlist_generator(self, url):
+        items = self.get_playlist_tracks(url)
+        async for item in items["items"]:
+            yield await self.convert_track(item["track"]["uri"])
